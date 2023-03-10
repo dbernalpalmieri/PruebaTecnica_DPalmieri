@@ -1,0 +1,6 @@
+framework module Pods_PruebaTecnica_DPalmieri {
+  umbrella header "Pods-PruebaTecnica_DPalmieri-umbrella.h"
+
+  export *
+  module * { export * }
+}

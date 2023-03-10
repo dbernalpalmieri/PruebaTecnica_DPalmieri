@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NombreCell" id="KGk-i7-Jjw" customClass="NombreCell" customModule="PruebaTecnica_DPalmieri" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="krU-Af-Sfl">
+                        <rect key="frame" x="16" y="8" width="288" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="BRV-c9-XUo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzG-Xi-6nV">
+                        <rect key="frame" x="16" y="50" width="288" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="xzs-zA-GYB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EzG-Xi-6nV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ca9-v6-16f"/>
+                    <constraint firstItem="krU-Af-Sfl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="I6S-gc-qzw"/>
+                    <constraint firstAttribute="trailing" secondItem="EzG-Xi-6nV" secondAttribute="trailing" constant="16" id="Pfa-t8-XJh"/>
+                    <constraint firstAttribute="trailing" secondItem="krU-Af-Sfl" secondAttribute="trailing" constant="16" id="T3f-0q-rTM"/>
+                    <constraint firstItem="krU-Af-Sfl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VIM-9o-Rmn"/>
+                    <constraint firstItem="EzG-Xi-6nV" firstAttribute="top" secondItem="krU-Af-Sfl" secondAttribute="bottom" constant="2" id="VhQ-aT-xEV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelMessage" destination="EzG-Xi-6nV" id="Rm2-9L-lND"/>
+                <outlet property="textFieldNombre" destination="krU-Af-Sfl" id="eCx-6U-CTT"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="-92.253521126760575"/>
+        </tableViewCell>
+    </objects>
+</document>
